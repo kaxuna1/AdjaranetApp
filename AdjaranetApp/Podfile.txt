@@ -1,0 +1,6 @@
+platform :ios, '8.1'
+use_frameworks!
+
+target 'AdjaranetApp' do
+pod 'DOFavoriteButton   '
+end

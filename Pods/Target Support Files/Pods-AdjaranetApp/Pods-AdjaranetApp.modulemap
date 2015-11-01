@@ -1,0 +1,6 @@
+framework module Pods_AdjaranetApp {
+  umbrella header "Pods-AdjaranetApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

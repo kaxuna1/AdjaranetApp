@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MTC" selectionStyle="default" indentationWidth="10" rowHeight="229" id="7IF-i7-ziL" customClass="MTC" customModule="AdjaranetApp">
+            <rect key="frame" x="0.0" y="0.0" width="595" height="229"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7IF-i7-ziL" id="BJI-D3-evV">
+                <rect key="frame" x="0.0" y="0.0" width="595" height="228"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="88R-fg-zqf">
+                        <rect key="frame" x="8" y="43" width="579" height="177"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="80k-YM-5lP">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHu-uo-vPM">
+                        <rect key="frame" x="8" y="8" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="88R-fg-zqf" secondAttribute="trailing" id="91T-xz-NGh"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="88R-fg-zqf" secondAttribute="leading" id="h0L-sW-RKT"/>
+                    <constraint firstAttribute="topMargin" secondItem="cHu-uo-vPM" secondAttribute="top" id="hCl-11-LDC"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="cHu-uo-vPM" secondAttribute="leading" id="k7r-A0-YNn"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="88R-fg-zqf" secondAttribute="bottom" id="k9M-Gu-Y4f"/>
+                    <constraint firstItem="88R-fg-zqf" firstAttribute="top" secondItem="cHu-uo-vPM" secondAttribute="bottom" constant="14" id="uMY-U5-Tft"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellLabel" destination="cHu-uo-vPM" id="pli-Pj-OIW"/>
+                <outlet property="collection" destination="88R-fg-zqf" id="tqf-Yg-E1v"/>
+            </connections>
+            <point key="canvasLocation" x="259.5" y="108.5"/>
+        </tableViewCell>
+    </objects>
+</document>
