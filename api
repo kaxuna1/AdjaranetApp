@@ -1,0 +1,35 @@
+{
+  "_links" : {
+    "regions" : {
+      "href" : "http://localhost:8080/api/regions{?page,size,sort}",
+      "templated" : true
+    },
+    "parcels" : {
+      "href" : "http://localhost:8080/api/parcels{?page,size,sort}",
+      "templated" : true
+    },
+    "users" : {
+      "href" : "http://localhost:8080/api/users{?page,size,sort}",
+      "templated" : true
+    },
+    "organisations" : {
+      "href" : "http://localhost:8080/api/organisations{?page,size,sort}",
+      "templated" : true
+    },
+    "serviceTypes" : {
+      "href" : "http://localhost:8080/api/serviceTypes{?page,size,sort}",
+      "templated" : true
+    },
+    "sessions" : {
+      "href" : "http://localhost:8080/api/sessions{?page,size,sort}",
+      "templated" : true
+    },
+    "formats" : {
+      "href" : "http://localhost:8080/api/formats{?page,size,sort}",
+      "templated" : true
+    },
+    "profile" : {
+      "href" : "http://localhost:8080/api/alps"
+    }
+  }
+}
