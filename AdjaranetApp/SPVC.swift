@@ -10,6 +10,7 @@ import UIKit
 import MediaPlayer
 import MBProgressHUD
 import Async
+import SwiftyJSON
 
 class SPVC: UIViewController,UITableViewDataSource, UITableViewDelegate ,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     
@@ -148,7 +149,7 @@ class SPVC: UIViewController,UITableViewDataSource, UITableViewDelegate ,UIColle
         for langItem in langs{
             _=langItem as String!
             langChanger.insertSegmentWithTitle(langItem, atIndex: index, animated: true)
-            index++;
+            index += 1;
         }
         langChanger.selectedSegmentIndex=0
         
@@ -308,7 +309,7 @@ class SPVC: UIViewController,UITableViewDataSource, UITableViewDelegate ,UIColle
                     self.actors.addObject(ActorModel(actorId: k, actorName: subJson.object as! String))
                 }
                 dispatch_async(dispatch_get_main_queue(),{
-                    actorsCollection?.reloadData()
+                    self.actorsCollection?.reloadData()
                 })
             })
             RestApiManager.sharedInstance.getInfo(self.movieId,onCompletion: {
@@ -337,7 +338,7 @@ class SPVC: UIViewController,UITableViewDataSource, UITableViewDelegate ,UIColle
                         if(i == 0){
                             gen+=","
                         }
-                        i++;
+                        i+=1;
                     }
                     
                     
@@ -366,7 +367,7 @@ class SPVC: UIViewController,UITableViewDataSource, UITableViewDelegate ,UIColle
                 }
                 dispatch_async(dispatch_get_main_queue(),{
                     
-                    relativeSeriesCollection?.reloadData()
+                    self.relativeSeriesCollection?.reloadData()
                     
                     
                 })
@@ -470,7 +471,7 @@ class SPVC: UIViewController,UITableViewDataSource, UITableViewDelegate ,UIColle
         for langItem in langs{
             _=langItem as String!
             langChanger.insertSegmentWithTitle(langItem, atIndex: index, animated: true)
-            index++;
+            index += 1;
         }
         langChanger.selectedSegmentIndex=0
         

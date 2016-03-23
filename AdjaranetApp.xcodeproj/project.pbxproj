@@ -19,7 +19,6 @@
 		76470E7D1B6FE59D000F0099 /* AdjaranetAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76470E7C1B6FE59D000F0099 /* AdjaranetAppTests.swift */; };
 		76470E881B6FE59D000F0099 /* AdjaranetAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76470E871B6FE59D000F0099 /* AdjaranetAppUITests.swift */; };
 		76797BC81B6FEE7A00D73C67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76797BC71B6FEE7A00D73C67 /* Main.storyboard */; };
-		76797BCB1B6FEEAD00D73C67 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76797BC91B6FEEAD00D73C67 /* SwiftyJSON.swift */; };
 		76797BCC1B6FEEAD00D73C67 /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76797BCA1B6FEEAD00D73C67 /* RestApiManager.swift */; };
 		76797BCE1B6FEECB00D73C67 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76797BCD1B6FEECB00D73C67 /* CAPSPageMenu.swift */; };
 		76797BD31B6FEEE400D73C67 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76797BCF1B6FEEE400D73C67 /* FriendTableViewCell.swift */; };
@@ -53,10 +52,10 @@
 		769262891B9CC8CF0026054C /* SPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769262881B9CC8CF0026054C /* SPVC.swift */; };
 		769330281B96EAF9000BFF84 /* MainCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 769330271B96EAF9000BFF84 /* MainCollectionCell.xib */; };
 		7693302A1B96F4EC000BFF84 /* MainCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769330291B96F4EC000BFF84 /* MainCollectionCell.swift */; };
-		76A9442E1BC90E1E0039A169 /* EpisodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A9442D1BC90E1E0039A169 /* EpisodeModel.swift */; settings = {ASSET_TAGS = (); }; };
-		76A944301BC917B10039A169 /* SeasonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A9442F1BC917B10039A169 /* SeasonModel.swift */; settings = {ASSET_TAGS = (); }; };
-		76A944321BCE5BD20039A169 /* episodesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A944311BCE5BD20039A169 /* episodesCell.xib */; settings = {ASSET_TAGS = (); }; };
-		76A944341BCE5C770039A169 /* episodesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A944331BCE5C770039A169 /* episodesCell.swift */; settings = {ASSET_TAGS = (); }; };
+		76A9442E1BC90E1E0039A169 /* EpisodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A9442D1BC90E1E0039A169 /* EpisodeModel.swift */; };
+		76A944301BC917B10039A169 /* SeasonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A9442F1BC917B10039A169 /* SeasonModel.swift */; };
+		76A944321BCE5BD20039A169 /* episodesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A944311BCE5BD20039A169 /* episodesCell.xib */; };
+		76A944341BCE5C770039A169 /* episodesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A944331BCE5C770039A169 /* episodesCell.swift */; };
 		76B23E5F1B8F3DA200CB4FBE /* MainPageTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B23E5E1B8F3DA200CB4FBE /* MainPageTableCell.xib */; };
 		76BD59F81B8D0523005E4F5C /* CollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BD59F71B8D0523005E4F5C /* CollectionModel.swift */; };
 		76BD59FC1B8DB110005E4F5C /* CollectionMoviesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BD59FB1B8DB110005E4F5C /* CollectionMoviesController.swift */; };
@@ -64,7 +63,7 @@
 		76ED44541B7202DF00555721 /* MoviePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED44531B7202DF00555721 /* MoviePageViewController.swift */; };
 		76F150D81B98DACD00082B47 /* MTC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76F150D71B98DACD00082B47 /* MTC.xib */; };
 		76F150DA1B98DBB900082B47 /* MTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F150D91B98DBB900082B47 /* MTC.swift */; };
-		C9862D27FE5E174BF12F6DD7 /* Pods_AdjaranetApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216999673AA97B1E90EC3450 /* Pods_AdjaranetApp.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C9862D27FE5E174BF12F6DD7 /* Pods_AdjaranetApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216999673AA97B1E90EC3450 /* Pods_AdjaranetApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,7 +103,6 @@
 		76470E871B6FE59D000F0099 /* AdjaranetAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjaranetAppUITests.swift; sourceTree = "<group>"; };
 		76470E891B6FE59D000F0099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76797BC71B6FEE7A00D73C67 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		76797BC91B6FEEAD00D73C67 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		76797BCA1B6FEEAD00D73C67 /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
 		76797BCD1B6FEECB00D73C67 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
 		76797BCF1B6FEEE400D73C67 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
@@ -214,7 +212,6 @@
 		76470E661B6FE59D000F0099 /* AdjaranetApp */ = {
 			isa = PBXGroup;
 			children = (
-				76797BC91B6FEEAD00D73C67 /* SwiftyJSON.swift */,
 				76797BCA1B6FEEAD00D73C67 /* RestApiManager.swift */,
 				76470E671B6FE59D000F0099 /* AppDelegate.swift */,
 				76797BCD1B6FEECB00D73C67 /* CAPSPageMenu.swift */,
@@ -541,7 +538,6 @@
 				76BD59FC1B8DB110005E4F5C /* CollectionMoviesController.swift in Sources */,
 				76797BE11B6FEEF100D73C67 /* TestViewController.swift in Sources */,
 				76797BDD1B6FEEF100D73C67 /* TestCollectionViewController.swift in Sources */,
-				76797BCB1B6FEEAD00D73C67 /* SwiftyJSON.swift in Sources */,
 				76470E6A1B6FE59D000F0099 /* ViewController.swift in Sources */,
 				76A944341BCE5C770039A169 /* episodesCell.swift in Sources */,
 				769262891B9CC8CF0026054C /* SPVC.swift in Sources */,

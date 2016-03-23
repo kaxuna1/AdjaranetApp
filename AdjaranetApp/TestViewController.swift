@@ -10,7 +10,7 @@ import UIKit
 import Async
 import MBProgressHUD
 import SDWebImage
-
+import SwiftyJSON
 
 class TestViewController: UIViewController,UITableViewDataSource, UITableViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     var navigation: UINavigationController?

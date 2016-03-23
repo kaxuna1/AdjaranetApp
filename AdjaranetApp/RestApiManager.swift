@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import SwiftyJSON
 typealias ServiceResponse = (JSON, NSError?) -> Void
 
 class RestApiManager:NSObject {

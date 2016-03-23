@@ -10,6 +10,7 @@ import UIKit
 import MediaPlayer
 import MBProgressHUD
 import Async
+import SwiftyJSON
 
 class MoviePageViewController: UIViewController ,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
 
@@ -98,7 +99,7 @@ class MoviePageViewController: UIViewController ,UICollectionViewDataSource,UICo
         for langItem in langs{
             _=langItem as String!
             langChanger.insertSegmentWithTitle(langItem, atIndex: index, animated: true)
-            index++;
+            index += 1;
         }
         langChanger.selectedSegmentIndex=0
         print("langs\(langs)")
@@ -225,7 +226,7 @@ class MoviePageViewController: UIViewController ,UICollectionViewDataSource,UICo
                     self.actors.addObject(ActorModel(actorId: k, actorName: subJson.object as! String))
                 }
                 dispatch_async(dispatch_get_main_queue(),{
-                    actorsCollection?.reloadData()
+                    self.actorsCollection?.reloadData()
                 })
             })
             RestApiManager.sharedInstance.getInfo(self.movieId,onCompletion: {
@@ -254,7 +255,7 @@ class MoviePageViewController: UIViewController ,UICollectionViewDataSource,UICo
                         if(i == 0){
                         gen+=","
                         }
-                        i++;
+                        i+=1;
                     }
                     
                     
@@ -283,7 +284,7 @@ class MoviePageViewController: UIViewController ,UICollectionViewDataSource,UICo
         }
         dispatch_async(dispatch_get_main_queue(),{
             
-            relativeMoviesCollection?.reloadData()
+            self.relativeMoviesCollection?.reloadData()
             
             
         })

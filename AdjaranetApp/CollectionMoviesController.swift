@@ -10,6 +10,7 @@ import UIKit
 import Async
 import MBProgressHUD
 import SDWebImage
+import SwiftyJSON
 
 class CollectionMoviesController: UIViewController,UITableViewDataSource, UITableViewDelegate {
     var collectionId:String?

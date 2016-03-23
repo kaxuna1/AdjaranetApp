@@ -9,6 +9,7 @@
 import UIKit
 import Async
 import SDWebImage
+import SwiftyJSON
 
 let reuseIdentifier = "MoodCollectionViewCell"
 

@@ -11,6 +11,7 @@ import UIKit
 import Async
 import SDWebImage
 import MBProgressHUD
+import SwiftyJSON
 
 
 class svc: UITableViewController,UISearchBarDelegate {
@@ -115,7 +116,7 @@ class svc: UITableViewController,UISearchBarDelegate {
                     for (_, subJson): (String, JSON) in results {
                         let movie:AnyObject=subJson.object
                         self.items.addObject(movie)
-                        self.loadedMovies++
+                        self.loadedMovies+=1;
                     }
                     dispatch_async(dispatch_get_main_queue(),{
                         self.tableView?.reloadData()
@@ -132,7 +133,7 @@ class svc: UITableViewController,UISearchBarDelegate {
     }
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         let currentLoaded:Int=loadedMovies as Int
-        k++;
+        k += 1;
         if((currentLoaded-3)==indexPath.row){
             Async.background{
                 self.loadMovies()
